@@ -126,7 +126,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             header = "<i class='fa-solid fa-lightbulb'></i>&nbsp;Electrician <span style='color:#ffae00'>[ ✨PROFITABIL ]</span>",
             txt = "Repara panourile stricate din Paleto Bay!<br><span style='color:#ffae00'>Ore : 10</span>",
             params = {
-                event = "job:scafandru",
+                event = "job:electrician",
 
             }
         },
