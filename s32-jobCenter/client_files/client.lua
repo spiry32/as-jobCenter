@@ -95,7 +95,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 4,
+            id = 5,
             header = "<i class='fa-solid fa-taxi'></i>&nbsp;Taxi",
             txt = "Preia comenzile clientilor si condu-i la locatia dorita",
             params = {
@@ -104,7 +104,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 5,
+            id = 6,
             header = "<i class='fa-solid fa-wheat-awn'></i>&nbsp;Fermier",
             txt = "Du-te la ferma din Paleto si planteaza legumele cerute.<br><span style='color:#ffae00'>Ore : 25</span>",
             params = {
