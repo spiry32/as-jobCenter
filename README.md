@@ -5,7 +5,7 @@ Simple FiveM Job Center Resource
 
 **📌 For the script to work as such, download the dependency:** https://github.com/nerohiro/nh-context
 
-*❓ Support? *
+*❓ Support?*
 **Enter my Discord Server for future updates :** https://discord.gg/rmkg78ge2p 
 
 **🚧 Logically, this resource only works for vRP**
