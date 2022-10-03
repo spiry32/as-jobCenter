@@ -2,8 +2,9 @@ fx_version 'cerulean'
 games {'gta5'}
 
 description 'Job Center'
-dependency 'nh-context'
 author 'Sp1ry32' -- For support: @Sp1ry#2599
+
+shared_script 'config.lua'
 
 server_scripts {
 	"@vrp/lib/utils.lua",
