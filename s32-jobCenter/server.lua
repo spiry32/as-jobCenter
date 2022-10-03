@@ -22,12 +22,7 @@ end)
 RegisterServerEvent('Getjob:taxi')
 AddEventHandler('Getjob:taxi', function()
 	local user_id = vRP.getUserId({source})
-	local orejucate = vRP.getUserHoursPlayed({user_id})
-	if orejucate >= 350 then
-		vRP.addUserGroup({user_id, "Scafandru Recuperator"})
-	else
-		vRPclient.notify(user_id, {"Nu ai 350 ore"})
-	end
+	vRP.addUserGroup({user_id, "Taxi"})
 end)
 
 RegisterServerEvent('Getjob:electrician')
