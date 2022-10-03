@@ -23,6 +23,7 @@ RegisterServerEvent('Getjob:taxi')
 AddEventHandler('Getjob:taxi', function()
 	local user_id = vRP.getUserId({source})
 	vRP.addUserGroup({user_id, "Taxi"})
+	vRPclient.notify(user_id, {"Te-ai angajat cu succes ca si Taximetrist"})
 end)
 
 RegisterServerEvent('Getjob:electrician')
