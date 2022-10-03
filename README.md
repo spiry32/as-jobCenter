@@ -10,6 +10,8 @@ Simple FiveM Job Center Resource
 
 **🚧 Logically, this resource only works for vRP**
 
+**⚠ ATTENTION: This resource was created according to the AN Job Center system and modified/optimized for vRP**
+
 *📚 Copyright © 2022 Sp1ry.*
 
 PREVIEW : ![image](https://user-images.githubusercontent.com/103727459/193593763-2df1b17a-e920-426f-9e2f-77a4e570b5e6.png)
