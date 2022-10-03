@@ -59,7 +59,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             txt = ""
         },
 		{
-            id = 6,
+            id = 2,
             header = "<i class='fa-solid fa-wheat-awn'></i>&nbsp;Somer",
             txt = "Nu faci absolut nimic.",
             params = {
@@ -68,7 +68,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
         {
-            id = 2,
+            id = 3,
             header = "<i class='fa-regular fa-gem'></i>&nbsp;Santierist",
             txt = "Stai si dai la picamer pana nu mai poti.",
             params = {
@@ -77,7 +77,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 3,
+            id = 4,
             header = "<i class='fa-solid fa-recycle'></i>&nbsp;Gunoier",
             txt = "Mergi si trange toate sacii din tomberoane iar apoi intoarce-te la sediu pentru primit rasplata.",
             params = {
@@ -86,7 +86,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 4,
+            id = 5,
             header = "<i class='fa-solid fa-fish'></i>&nbsp;Pescar",
             txt = "Pescuiesti.Nimic mai mult.",
             params = {
@@ -95,7 +95,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 5,
+            id = 6,
             header = "<i class='fa-solid fa-taxi'></i>&nbsp;Taxi",
             txt = "Preia comenzile clientilor si condu-i la locatia dorita",
             params = {
@@ -104,7 +104,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 6,
+            id = 7,
             header = "<i class='fa-solid fa-wheat-awn'></i>&nbsp;Fermier",
             txt = "Du-te la ferma din Paleto si planteaza legumele cerute.<br><span style='color:#ffae00'>Ore : 25</span>",
             params = {
@@ -113,7 +113,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 7,
+            id = 8,
             header = "<i class='fa-sharp fa-solid fa-mask'></i>&nbsp;Scafandru",
             txt = "Cauti corali in mare.Atentie! Poti gasi si obiecte ilegale!<br><span style='color:#ffae00'>Ore : 350</span>",
             params = {
@@ -122,7 +122,7 @@ RegisterNetEvent('nh-context:joblisting', function()
             }
         },
 		{
-            id = 8,
+            id = 9,
             header = "<i class='fa-solid fa-lightbulb'></i>&nbsp;Electrician <span style='color:#ffae00'>[ ✨PROFITABIL ]</span>",
             txt = "Repara panourile stricate din Paleto Bay!<br><span style='color:#ffae00'>Ore : 10</span>",
             params = {
