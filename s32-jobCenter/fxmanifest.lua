@@ -3,7 +3,7 @@ games {'gta5'}
 
 description 'Job Center'
 author 'Sp1ry32' -- For support: @Sp1ry#2599
-
+dependency 'an-context' -- https://github.com/aymannajim/an-context
 shared_script 'config.lua'
 
 server_scripts {
