@@ -1,36 +1,27 @@
-
-local jobCenter = {}
-jobCenter.npcModel = "a_m_m_prolhost_01"
-jobCenter.blipEnabled = true
-jobCenter.blipSprite = 408
-jobCenter.blipColor = 11 -- 2 or 11 or 82
-jobCenter.pos = vector4(-264.39, -965.19, 30.22, 207.32)
-jobCenter.pos3 = vector3(-264.39, -965.19, 32.22)
-
 Citizen.CreateThread(function()
-	RequestModel(GetHashKey(jobCenter.npcModel))
-	while not HasModelLoaded(GetHashKey(jobCenter.npcModel)) do
+	RequestModel(GetHashKey(Config.npcModel))
+	while not HasModelLoaded(GetHashKey(Config.npcModel)) do
 		Wait(1)
 	end
 	RequestAnimDict("mini@strip_club@idles@bouncer@base")
 	while not HasAnimDictLoaded("mini@strip_club@idles@bouncer@base") do
 		Wait(1)
 	end
-	jobCenter.npc = CreatePed(4, jobCenter.npcModel, jobCenter.pos, false, true)
-	PlaceObjectOnGroundProperly(jobCenter.npc, true)
-    FreezeEntityPosition(jobCenter.npc, true)
-    SetEntityInvincible(jobCenter.npc, true)
-    SetBlockingOfNonTemporaryEvents(jobCenter.npc, true)
-    TaskPlayAnim(jobCenter.npc,"mini@strip_club@idles@bouncer@base","base", 8.0, 0.0, -1, 1, 0, 0, 0, 0)
+	FunctionCreateNPC = CreatePed(4, Config.npcModel, Config.NPCPos, false, true)
+	PlaceObjectOnGroundProperly(NPC, true)
+    FreezeEntityPosition(FunctionCreateNPC, true)
+    SetEntityInvincible(FunctionCreateNPC, true)
+    SetBlockingOfNonTemporaryEvents(FunctionCreateNPC, true)
+    TaskPlayAnim(FunctionCreateNPC,"mini@strip_club@idles@bouncer@base","base", 8.0, 0.0, -1, 1, 0, 0, 0, 0)
 
 	---- blips
 	Citizen.CreateThread(function()
-		if jobCenter.blipEnabled then
-			local blip = AddBlipForCoord(jobCenter.pos3)
-			SetBlipSprite(blip, jobCenter.blipSprite)
+		if Config.blipEnabled then
+			local blip = AddBlipForCoord(Config.Pos)
+			SetBlipSprite(blip, Config.blipSprite)
 			SetBlipDisplay(blip, 4)
 			SetBlipScale(blip, 0.7)
-			SetBlipColour(blip, jobCenter.blipColor)
+			SetBlipColour(blip, Config.blipColor)
 			SetBlipAsShortRange(blip, true)
 			BeginTextCommandSetBlipName("STRING")
 			AddTextComponentString('Job Center')
@@ -43,9 +34,9 @@ Citizen.CreateThread(function()
 		Citizen.Wait(5)
 		local playerPed = PlayerPedId()
 		local coords = GetEntityCoords(playerPed)
-		local dst = #(coords - jobCenter.pos3)
+		local dst = #(coords - Config.Pos)
 		if dst < 3.0 then
-			DrawText3Ds(-264.1413269043,-965.74963378906,31.223907470703+.5, 'Apasa ~g~[E]~w~ pentru a deschide Job Center-ul')
+			DrawText3Ds(-264.1413269043,-965.74963378906,31.223907470703+.5, Config.Text)
 			if dst < 2.0 then
 				if IsControlJustPressed(0, 38) then
 					OpenJobCenterMenu()
